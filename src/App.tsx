@@ -7,7 +7,6 @@ function App() {
   return (
    <div>
     <GlobalStyles />
-    <Header />
     <Todo />
    </div>
   )

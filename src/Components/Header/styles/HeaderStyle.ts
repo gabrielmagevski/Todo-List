@@ -26,4 +26,6 @@ export const InputAddTodo = styled.input`
   &:focus, &:focus, &:focus {
     outline: 0;
   } 
+
+  position: relative;
 `;
