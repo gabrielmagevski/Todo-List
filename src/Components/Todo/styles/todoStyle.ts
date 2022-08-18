@@ -8,7 +8,16 @@ export const Content = styled.div`
 `;
 
 export const List = styled.ul`
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
+  @media screen and (min-width:768px) { 
+    max-width: 500px;
+  }
 `;
 
 
@@ -16,10 +25,15 @@ export const TodoContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #2c2c2c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 `;
 
 
-export const Check = styled.input`
+export const Check = styled.input.attrs({type: 'checkbox'})`
   margin-right: 15px;
   padding: 10px 20px;
   cursor: pointer;
@@ -61,10 +75,12 @@ export const Button = styled.button`
   background-color: transparent;
   color: #FFF;
   position: absolute;
-  right: 29.9%;
-
+  right: 27.5%;
+  
   &:hover {
     background-color: #343434;
     cursor: pointer;
   }
 `;
+
+export const Form = styled.form``;
